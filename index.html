@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash - Devloper portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(11, 11, 11);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color : whilte;
+        }
+        nav ul li a:hover{
+            color:lavender;
+            font-size: 1.04rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+        }
+        .firstSection >div{
+            width: 30%;
+        }
+        .leftSection{
+           font-size: 1.3rem;
+           
+        }
+        .rightSection img{
+            width: 90%;
+            margin: 50px 0;
+        }
+        .purple{
+            color:blueviolet;
+        }
+        #element{
+            color: rgb(31, 31, 221);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Task manager</div>
+            <div class="rigt">
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+       <section class="firstSection">
+        <div class="leftSection">
+            <form action="process.php" method="post">
+                <label for="username">Email:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" value="save">Login</button>
+        
+                <div class="register-link">
+                    <p>Don't have an account? <a href="form_validation.html">Register here</a></p>
+                </div>
+        
+                
+            </form>
+        
+        <span id="element"></span>
+        </div>
+<div class="rightSection">
+    <img src="pg.png" alt ="">
+   
+
+</div>
+
+       </section> 
+       <section class="secondSection">
+        <hr>
+       
+
+       </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['login ', 'taskmanager',],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
